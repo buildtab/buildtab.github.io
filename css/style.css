@@ -10253,3 +10253,6 @@ div.fixed {
    box-shadow: 0 8px 6px -6px black;
   
 } 
+.herowrap{
+  background-image: url(../images/1.jpg);
+}
