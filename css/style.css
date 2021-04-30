@@ -10245,3 +10245,12 @@ textarea.form-control {
   .modal-content .modal-footer {
     border: none;
     background: #f8f8f8; }
+div.fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+   box-shadow: 0 8px 6px -6px black;
+  
+} 
+
