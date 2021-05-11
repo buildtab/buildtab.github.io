@@ -20,6 +20,46 @@
 	
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+.accordion {
+	border-radius: 10px;
+    margin: 2px;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active123, .accordion:hover {
+  background-color: #dedede;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active123:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
 </head>
 <body>
 		<div class="fixed"><a href="https://wa.me/918500333108?text=Hello!!" target="black"><img src="images/wa.png" style="height: 50px;"></a></div>
@@ -237,7 +277,92 @@
 		</div>
 		<p class="mb-0" style="text-align: center;"><a href="specifications.pdf" class="btn btn-primary px-4 py-3" target="black" download>Download Specifications Brochure</a></p>
 	</section>
+	<br>
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2" style="text-align: center;width: 90%;margin: auto;">
+		<h1><b>FAQ's</b></h1>
+		<button class="accordion"><b>01. Will the packages of Builtiful cover my approvals if needed?</b></button>
+		<div class="panel">
+		  <p style="text-align: left;color: #6b6b6b;">We certainly help our clients in the approval process through the professionals in our company. However, we are not directly involved in the approval process but our employees ensure that the clients get a completely hassle free experience by assisting them in the process.</p>
+		</div>
 
+		<button class="accordion"><b>02. What are the quality checks that you perform on the site?</b></button>
+		<div class="panel">
+		  <p style="text-align: left;color: #6b6b6b;">We have our own set of quality parameters that it abides by to maintain optimum quality of the work we execute. We also do a thorough background check of our suppliers and contractors to ensure they follow the company's quality standards. </p>
+		</div>
+
+		<button class="accordion"><b>03. How Is the payment schedule for the construction of the project taken? </b></button>
+		<div class="panel">
+		  <p style="text-align: left;color: #6b6b6b;">We follow a milestone based payment methodology, where you will pay as per the agreed payment milestones in the construction services agreement which is agreed upon before the work has started.</p>
+		</div>
+
+		<button class="accordion"><b>04. Is compound wall included in the package?</b></button>
+		<div class="panel">
+		  <p style="text-align: left;color: #6b6b6b;">It is not necessary for all houses to have a compound wall. By removing the compound wall from the package, we ensure that only the clients who opt for a compound wall, pay for it.</p>
+		</div>
+
+		<button class="accordion"><b>05. Will any increase in change of prices of materials affect the ongoing project?</b></button>
+		<div class="panel">
+		  <p style="text-align: left;color: #6b6b6b;">The pricing of our contracts is frozen on a stamp paper. Thus, the prices will remain stable in most of the scenarios. However, in rare situations where there are sudden spikes in prices due to external scenarios, the price variations are borne by the client. On the other hand, if there is a price drop, the client gets a price reduction for the same.</p>
+		</div>
+
+		<button class="accordion"><b>06. We have heard of many issues that are dealt with contractors. What are they and how does Builtiful solve them?</b></button>
+		<div class="panel">
+		  <p style="text-align: left;color: #6b6b6b;">The construction industry today is plagued with unprofessionalism in local contractors. There are a lot of issues that people have faced with them. It has led to unproductivity, inefficiencies, low customer-satisfaction, less digital penetration and lack of transparency. This has led the people to change their view of a contractor.Our mission is to cabbage that persona and solve for inefficiencies in the construction experience by leveraging technology at every step of the building lifecycle to guarantee customer-satisfaction. </p>
+		</div>
+
+		<button class="accordion"><b>07. How are you enabling technology in the construction process?</b></button>
+		<div class="panel">
+		  <p style="text-align: left;color: #6b6b6b;">The average time is 5-6 months for a 1000 sq.ft. Build up area house. The timeline varies and can be mutually agreed as per the customer’s planned cash flow.</p>
+		</div>
+
+		<button class="accordion"><b>09. WHAT DOES THE BuildTab FIVE YEARS HOME WARRANTY COVER?</b></button>
+		<div class="panel">
+		  <p style="text-align: left;color: #6b6b6b;">With technology at the core of our brand, we digitise every process to be highly efficient and transparent in the work we do. Some of our services include: <br>
+
+		  1. Day to day progress reporting (Daily Progress Report).<br>
+
+			 2. Timeline tracking (work completed v/s to be completed).<br>
+
+			 3. Complete material report that empowers you to track procurement, usage and available stock in site.<br>
+			 
+			4. Workforce report.<br>
+
+			 5. Surveillance secured site (all your work is under cctv monitoring 24 X 7) to eliminate theft and damage.<br>
+
+			 6. Transparent environment for you to understand your cost flow.<br>
+
+			 7. Live images and videos of work progress.<br>
+
+			 8. Alerts that will keep you updated on work status.<br>
+
+</p>
+		</div>
+
+		
+
+	
+
+		
+
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active123");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight) {
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+		</script>
+
+	</section>
+	<br>
 	<section class="ftco-intro">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -246,7 +371,7 @@
 						<div class="overlay"></div>
 						<h2>Providing Personalized and High Quality Services</h2>
 						<p>We can manage your dream building A small river named Duden flows by their place</p>
-						<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Request A Quote</a></p>
+						<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3" data-toggle="modal" data-target="#exampleModalCenter">Request A Quote</a></p>
 					</div>
 				</div>
 			</div>
@@ -260,10 +385,10 @@
 			<div class="row no-gutters">
 				<div class="col-md-6 py-5 bg-secondary aside-stretch">
 					<div class="heading-section heading-section-white p-4 pl-md-0 py-md-5 pr-md-5">
-						<span class="subheading">BuildTab A Construction Company</span>
+						<span class="subheading">Buildtab Construction</span>
 						<h2 class="mb-4">Best Provider for Industrial Services</h2>
-						<h4>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h4>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
+						
+						<p>BuildTab construtions is a favorite choice for Engineering. Construction & Project Management Our diverse portfolio includes Industrial. Infrastructure. Commercial, Residential services. We have projects in various locations all over India. Because of our unmatched combination of knowledge, skill, experience and commitment to do every job. we can handle any challenging project at any location.</p>
 					</div>
 				</div>
 				<div class="col-md-6 d-flex align-items-center">
@@ -272,7 +397,7 @@
 							<div class="block-18 bg-primary d-flex align-items-center justify-content-between">
 								<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-engineer"></span></div>
 								<div class="text">
-									<strong class="number" data-number="48000">0</strong>
+									<strong class="number" data-number="14">0</strong>
 									<span>Project Completed</span>
 								</div>
 							</div>
@@ -281,8 +406,8 @@
 							<div class="block-18 d-flex align-items-center justify-content-between">
 								<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-worker-1"></span></div>
 								<div class="text">
-									<strong class="number" data-number="54900">0</strong>
-									<span>Happy Customers</span>
+									<strong class="number" data-number="150000">0</strong><span>Sq.Ft.</span>
+									<span>built-up area</span>
 								</div>
 							</div>
 						</div>
@@ -312,9 +437,9 @@
 									</span>
 								</div>
 								<div class="text">
-									<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-									<p class="name">Jeff Freshman</p>
-									<span class="position">Guests</span>
+									<p class="mb-4">It's incredible. Buildtab Construction did exactly what you said it does. We've seen amazing results already. BuildTab Construction has completely surpassed our expectations.</p>
+									<p class="name">Ramesh</p>
+									<span class="position">Client</span>
 								</div>
 							</div>
 						</div>
@@ -326,9 +451,9 @@
 									</span>
 								</div>
 								<div class="text">
-									<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-									<p class="name">Jeff Freshman</p>
-									<span class="position">Guests</span>
+									<p class="mb-4">BuildTab is exactly what I've been looking for.</p>
+									<p class="name">Sneha</p>
+									<span class="position">Client</span>
 								</div>
 							</div>
 						</div>
@@ -340,9 +465,9 @@
 									</span>
 								</div>
 								<div class="text">
-									<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-									<p class="name">Jeff Freshman</p>
-									<span class="position">Guests</span>
+									<p class="mb-4">It's really wonderful. Best. Service. Ever!</p>
+									<p class="name">Ram Gopal</p>
+									<span class="position">Client</span>
 								</div>
 							</div>
 						</div>
@@ -354,9 +479,9 @@
 									</span>
 								</div>
 								<div class="text">
-									<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-									<p class="name">Jeff Freshman</p>
-									<span class="position">Guests</span>
+									<p class="mb-4">Thank You! I am so pleased with this product.</p>
+									<p class="name">Ajay Kumar</p>
+									<span class="position">Client</span>
 								</div>
 							</div>
 						</div>
@@ -368,9 +493,9 @@
 									</span>
 								</div>
 								<div class="text">
-									<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-									<p class="name">Jeff Freshman</p>
-									<span class="position">Guests</span>
+									<p class="mb-4">BuildTab Construction impressed me on multiple levels. Really good</p>
+									<p class="name">Sridhar Reddy</p>
+									<span class="position">Client</span>
 								</div>
 							</div>
 						</div>
